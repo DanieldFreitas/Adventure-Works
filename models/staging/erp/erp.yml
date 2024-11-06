@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: erp_adventure-works
+    description: Sistema de dados de venda da adventure-works
+    database: FEA24_9
+    schema: RAW_ADVENTURE_WORKS
+    tables:
+      - name: CUSTOMER
+        descrption: Tabela fonte com informações dos clientes 
+        coluns:
+          - name: CUSTOMERID
+            data_test:
+              - unique
+              - not_null
+              
+        
+
+    

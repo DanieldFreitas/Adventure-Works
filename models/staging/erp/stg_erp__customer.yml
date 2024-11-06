@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: stg_erp__customer
+    description: "Tabela de preparação de dados brutos do customer"
+    columns:
+      - name: PK_CLIENTE
+        description: "Chave primária do cliente"
+        
+      - name: FK_PESSOA
+        description: "Chave estrangeira para a tabela de pessoas associadas ao cliente"
+        
+      - name: FK_LOJA
+        description: "Chave estrangeira para identificar a loja associada ao cliente"
+        
+      - name: FK_TERRITORIO
+        description: "Chave estrangeira para identificar o território do cliente"
+        
+      - name: DATA_MODIFICADA
+        description: "Data da última modificação dos dados do cliente"
+
+
+
