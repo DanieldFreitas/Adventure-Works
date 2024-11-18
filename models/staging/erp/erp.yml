@@ -13,7 +13,16 @@ sources:
             data_test:
               - unique
               - not_null
-              
+      
+      - name: PERSON
+        descrption: Tabela fonte com informações dos clientes 
+        coluns:
+          - name: BUSINESSENTITYID
+            data_test:
+              - unique
+              - not_null
+
+          
         
 
     
