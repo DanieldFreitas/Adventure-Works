@@ -60,7 +60,23 @@ sources:
           - name: CREDITCARDID
             data_test:
               - unique
-              - not_null            
+              - not_null  
+
+      - name: SALESORDERHEADERSALESREASON
+        descrption: Tabela fonte com informações ordem motivo da venda
+        coluns:
+          - name: SALESORDERID
+            data_test:
+              - unique
+              - not_null      
+
+      - name: SALESREASON
+        descrption: Tabela fonte com informações ordem motivo da venda
+        coluns:
+          - name: SALESREASONID
+            data_test:
+              - unique
+              - not_null        
         
 
     
