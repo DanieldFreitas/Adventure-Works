@@ -44,7 +44,23 @@ sources:
           - name: PRODUCTID
             data_test:
               - unique
-              - not_null   
+              - not_null
+
+      - name: PERSONCREDITCARD
+        descrption: Tabela fonte com informações de pessoas e seu cartão 
+        coluns:
+          - name: BUSINESSENTITYID
+            data_test:
+              - unique
+              - not_null
+
+      - name: CREDITCARD
+        descrption: Tabela fonte com informações de pessoas e seu cartão 
+        coluns:
+          - name: CREDITCARDID
+            data_test:
+              - unique
+              - not_null            
         
 
     
