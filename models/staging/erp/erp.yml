@@ -22,7 +22,29 @@ sources:
               - unique
               - not_null
 
-          
+      - name: PRODUCTCATEGORY
+        descrption: Tabela fonte com informações das categoria dos produtos
+        coluns:
+          - name: PRODUCTCATEGORYID
+            data_test:
+              - unique
+              - not_null
+
+      - name: PRODUCTSUBCATEGORY
+        descrption: Tabela fonte com informações das subcategoria dos produtos
+        coluns:
+          - name: PRODUCTSUBCATEGORYID
+            data_test:
+              - unique
+              - not_null 
+
+      - name: PRODUCT
+        descrption: Tabela fonte com informações dos produtos
+        coluns:
+          - name: PRODUCTID
+            data_test:
+              - unique
+              - not_null   
         
 
     
