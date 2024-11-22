@@ -76,7 +76,31 @@ sources:
           - name: SALESREASONID
             data_test:
               - unique
-              - not_null        
-        
+              - not_null      
+
+      - name: ADDRESS
+        descrption: Tabela fonte com informações de endereço 
+        coluns:
+          - name: ADDRESSID
+            data_test:
+              - unique
+              - not_null
+
+      - name: STATEPROVINCE
+        descrption: Tabela fonte com informações de endereço 
+        coluns:
+          - name: STATEPROVINCEID
+            data_test:
+              - unique
+              - not_null
+
+      - name: SALESTERRITORY
+        descrption: Tabela fonte com informações de endereço 
+        coluns:
+          - name: TERRITORYID
+            data_test:
+              - unique
+              - not_null               
+          
 
     
