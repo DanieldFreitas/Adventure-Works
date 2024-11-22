@@ -6,6 +6,23 @@ sources:
     database: FEA24_9
     schema: RAW_ADVENTURE_WORKS
     tables:
+
+      - name: SALESORDERHEADER
+        descrption: Tabela fonte com informações de vendas
+        coluns:
+          - name: SALESORDERID
+            data_test:
+              - unique
+              - not_null
+
+      - name: SALESORDERDETAIL
+        descrption: Tabela fonte com informações dos detalhes da venda
+        coluns:
+          - name: SALESORDERID
+            data_test:
+              - unique
+              - not_null
+           
       - name: CUSTOMER
         descrption: Tabela fonte com informações dos clientes 
         coluns:
@@ -87,7 +104,7 @@ sources:
               - not_null
 
       - name: STATEPROVINCE
-        descrption: Tabela fonte com informações de endereço 
+        descrption: Tabela fonte com informações das provincias
         coluns:
           - name: STATEPROVINCEID
             data_test:
@@ -95,7 +112,7 @@ sources:
               - not_null
 
       - name: SALESTERRITORY
-        descrption: Tabela fonte com informações de endereço 
+        descrption: Tabela fonte com informações dos territorios
         coluns:
           - name: TERRITORYID
             data_test:
