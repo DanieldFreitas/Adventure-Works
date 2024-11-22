@@ -101,6 +101,27 @@ sources:
             data_test:
               - unique
               - not_null               
-          
+      
+      - name: date
+        description: "Dimensão de datas com granularidade diária para análises temporais."
+        columns:
+          - name: date_id
+            description: "Chave primária da dimensão de data (formato YYYYMMDD)."
+          - name: date
+            description: "Data completa (timestamp)."
+          - name: year
+            description: "Ano da data."
+          - name: month
+            description: "Mês da data (numérico)."
+          - name: month_name
+            description: "Nome do mês."
+          - name: quarter
+            description: "Trimestre do ano."
+          - name: week
+            description: "Semana do ano."
+          - name: day
+            description: "Dia do mês."
+          - name: is_weekend
+            description: "Indicador de fim de semana."
 
     
